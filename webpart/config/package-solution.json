@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "leads-lob-client-side-solution",
+    "id": "2dc4f7fe-cd2e-4f2a-8a92-86acc494e909",
+    "version": "1.5.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Tasks.ReadWrite"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Files.ReadWrite"
+      }
+    ],
+    "developer": {
+      "name": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "websiteUrl": "",
+      "mpnId": "Undefined-1.15.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "leads-lob description"
+      },
+      "longDescription": {
+        "default": "leads-lob description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "leads-lob Feature",
+        "description": "The feature that activates elements of the leads-lob solution.",
+        "id": "d57da433-d2be-4b36-9d16-e4e8478a9124",
+        "version": "1.5.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/leads-lob.sppkg"
+  }
+}

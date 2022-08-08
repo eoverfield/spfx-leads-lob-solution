@@ -1,0 +1,74 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.leads {
+  background: $ms-color-neutralLight;
+  padding: 20px;
+
+  .title {
+    @include ms-font-xxl;
+    padding-bottom: 0.5em;
+  }
+
+  .viewWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .view {
+      width: 15em;
+      padding-bottom: 0.5em;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+    .card {
+      margin: 0 20px 20px 0;
+      border: 1px solid transparent;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+      width: 318px;
+
+      .cardContents {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+
+      .urgent {
+        @include ms-font-xl;
+        color: $ms-color-redDark;
+        position: absolute;
+        right: 8px;
+        margin-top: 8px;
+        width: 16px;
+        height: 16px;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDQ4IDIwNDgiPjxwYXRoIGQ9Ik05NjAgMTkyMHEtMTMzIDAtMjU1LTM0dC0yMzAtOTYtMTk0LTE1MC0xNTAtMTk1LTk3LTIyOVQwIDk2MHEwLTEzMyAzNC0yNTV0OTYtMjMwIDE1MC0xOTQgMTk1LTE1MCAyMjktOTdUOTYwIDBxMTMzIDAgMjU1IDM0dDIzMCA5NiAxOTQgMTUwIDE1MCAxOTUgOTcgMjI5IDM0IDI1NnEwIDEzMy0zNCAyNTV0LTk2IDIzMC0xNTAgMTk0LTE5NSAxNTAtMjI5IDk3LTI1NiAzNHptMC0xNzkycS0xMTUgMC0yMjEgMzB0LTE5OCA4NC0xNjkgMTMwLTEzMCAxNjgtODQgMTk5LTMwIDIyMXEwIDExNCAzMCAyMjB0ODQgMTk5IDEzMCAxNjkgMTY4IDEzMCAxOTkgODQgMjIxIDMwcTExNCAwIDIyMC0zMHQxOTktODQgMTY5LTEzMCAxMzAtMTY4IDg0LTE5OSAzMC0yMjFxMC0xMTQtMzAtMjIwdC04NC0xOTktMTMwLTE2OS0xNjgtMTMwLTE5OS04NC0yMjEtMzB6bS02NCA2NDBoMTI4djY0MEg4OTZWNzY4em0wLTI1NmgxMjh2MTI4SDg5NlY1MTJ6IiBmaWxsPSIjYTgwMDAwIj48L3BhdGg+PC9zdmc+");
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      :global {
+        .ms-DocumentCardTitle {
+          height: inherit;
+        }
+      }
+
+      .titleSecondary div {
+        @include ms-font-m;
+        color: $ms-color-neutralSecondary;
+        padding: 8px 16px;
+        line-height: 18px;
+        overflow: hidden;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
