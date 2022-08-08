@@ -75,7 +75,7 @@
   ],
   "bots": [
     {
-      "botId": "a349bab7-f895-4d6e-977a-764779833699",
+      "botId": "37d6b238-4c85-4d4b-bcd1-789e48fbe1a6",
       "needsChannelSelector": false,
       "isNotificationOnly": false,
       "scopes": [
@@ -86,7 +86,7 @@
   ],
   "composeExtensions": [
     {
-      "botId": "a349bab7-f895-4d6e-977a-764779833699",
+      "botId": "37d6b238-4c85-4d4b-bcd1-789e48fbe1a6",
       "canUpdateConfiguration": true,
       "commands": [
         {
